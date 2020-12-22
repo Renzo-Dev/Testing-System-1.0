@@ -1,0 +1,10 @@
+﻿cl : командная строка warning D9002: пропуск неизвестного параметра "/utf-16"
+  Users_.cpp
+C:\Users\danko\source\repos\Testing System Alpha 1.0\Testing System 1.0\Testing System 1.0\Users_.cpp(650,20): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\danko\source\repos\Testing System Alpha 1.0\Testing System 1.0\Testing System 1.0\Users_.cpp(274,10): warning C4102: EnterName: неиспользованная метка
+C:\Users\danko\source\repos\Testing System Alpha 1.0\Testing System 1.0\Testing System 1.0\Users_.cpp(311,13): warning C4102: EnterSurname: неиспользованная метка
+C:\Users\danko\source\repos\Testing System Alpha 1.0\Testing System 1.0\Testing System 1.0\Users_.cpp(342,16): warning C4102: EnterMiddlename: неиспользованная метка
+C:\Users\danko\source\repos\Testing System Alpha 1.0\Testing System 1.0\Testing System 1.0\Users_.cpp(519,13): warning C4102: EnterCountry: неиспользованная метка
+C:\Users\danko\source\repos\Testing System Alpha 1.0\Testing System 1.0\Testing System 1.0\Users_.cpp(550,10): warning C4102: Entercity: неиспользованная метка
+C:\Users\danko\source\repos\Testing System Alpha 1.0\Testing System 1.0\Testing System 1.0\Users_.cpp(619,12): warning C4102: EnterGender: неиспользованная метка
+  Testing System 1.0.vcxproj -> C:\Users\danko\source\repos\Testing System Alpha 1.0\Testing System 1.0\x64\Debug\Testing System 1.0.exe
