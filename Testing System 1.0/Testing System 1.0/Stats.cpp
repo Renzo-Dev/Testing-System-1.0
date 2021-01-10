@@ -5,7 +5,7 @@
 
 stats::stats() = default;
 
-void stats::show_users_stats(const string& username)
+void stats::show_users_stats(const string & username)
 {
 	system("cls");
 	char choose;
@@ -33,15 +33,14 @@ void stats::show_users_stats(const string& username)
 	{
 		return;
 	}
-
-	vector<Users_> tmp(1);
+	Users_ obj;
+	Users_::load_num_users(obj);	
+	const int size_vec = obj.num_users_;
 
 	switch (choose)
 	{
+		
 	case '1': {
-		Users_ obj;
-		Users_::load_num_users(obj);
-		const int size_vec = obj.num_users_;
 		vector<Users_> users(size_vec);
 		Users_::load_users(users);
 
@@ -51,9 +50,9 @@ void stats::show_users_stats(const string& username)
 			for (int j = 0; j < size(users) - i - 1; j++) {
 				if (users[j].points_math < users[j + 1].points_math) {
 					// меняем элементы местами
-					tmp[0] = users[j];
+					obj = users[j];
 					users[j] = users[j + 1];
-					users[j + 1] = tmp[0];
+					users[j + 1] = obj;
 				}
 			}
 		}
@@ -82,6 +81,7 @@ void stats::show_users_stats(const string& username)
 				if (users[i].points_math < 10) { cout << "\t|\n"; }
 				else if (users[i].points_math > 10 && users[i].points_math < 100) { cout << "\t|\n"; }
 				else if (users[i].points_math > 100 && users[i].points_math < 1000) { cout << "\t|\n"; }
+				else if (users[i].points_math == 1000) { cout << "\t|\n"; }
 			}
 			else {
 				cout << "\033[97m| " << i + 1; i - 1;
@@ -96,6 +96,7 @@ void stats::show_users_stats(const string& username)
 				if (users[i].points_math < 10) { cout << "\t|\n"; }
 				else if (users[i].points_math > 10 && users[i].points_math < 100) { cout << "\t|\n"; }
 				else if (users[i].points_math > 100 && users[i].points_math < 1000) { cout << "\t|\n"; }
+				else if (users[i].points_math == 1000) { cout << "\t|\n"; }
 			}
 		}
 
@@ -115,9 +116,6 @@ void stats::show_users_stats(const string& username)
 	}break;
 	case '2':
 	{
-		Users_ obj;
-		Users_::load_num_users(obj);
-		const int size_vec = obj.num_users_;
 		vector<Users_> users(size_vec);
 		Users_::load_users(users);
 
@@ -127,9 +125,9 @@ void stats::show_users_stats(const string& username)
 			for (int j = 0; j < size(users) - i - 1; j++) {
 				if (users[j].physics_points < users[j + 1].physics_points) {
 					// меняем элементы местами
-					tmp[0] = users[j];
+					obj = users[j];
 					users[j] = users[j + 1];
-					users[j + 1] = tmp[0];
+					users[j + 1] = obj;
 				}
 			}
 		}
@@ -158,6 +156,8 @@ void stats::show_users_stats(const string& username)
 				if (users[i].physics_points < 10) { cout << "\t|\n"; }
 				else if (users[i].physics_points > 10 && users[i].physics_points < 100) { cout << "\t|\n"; }
 				else if (users[i].physics_points > 100 && users[i].physics_points < 1000) { cout << "\t|\n"; }
+				else if (users[i].physics_points == 1000) { cout << "\t|\n"; }
+
 			}
 			else {
 				cout << "\033[97m| " << i + 1; i - 1;
@@ -172,6 +172,8 @@ void stats::show_users_stats(const string& username)
 				if (users[i].physics_points < 10) { cout << "\t|\n"; }
 				else if (users[i].physics_points > 10 && users[i].physics_points < 100) { cout << "\t|\n"; }
 				else if (users[i].physics_points > 100 && users[i].physics_points < 1000) { cout << "\t|\n"; }
+				else if (users[i].physics_points == 1000) { cout << "\t|\n"; }
+
 			}
 		}
 
@@ -191,9 +193,6 @@ void stats::show_users_stats(const string& username)
 	}break;
 	case '3':
 	{
-		Users_ obj;
-		Users_::load_num_users(obj);
-		const int size_vec = obj.num_users_;
 		vector<Users_> users(size_vec);
 		Users_::load_users(users);
 
@@ -203,9 +202,9 @@ void stats::show_users_stats(const string& username)
 			for (int j = 0; j < size(users) - i - 1; j++) {
 				if (users[j].points_mechanics < users[j + 1].points_mechanics) {
 					// меняем элементы местами
-					tmp[0] = users[j];
+					obj = users[j];
 					users[j] = users[j + 1];
-					users[j + 1] = tmp[0];
+					users[j + 1] = obj;
 				}
 			}
 		}
@@ -234,6 +233,8 @@ void stats::show_users_stats(const string& username)
 				if (users[i].points_mechanics < 10) { cout << "\t|\n"; }
 				else if (users[i].points_mechanics > 10 && users[i].points_mechanics < 100) { cout << "\t|\n"; }
 				else if (users[i].points_mechanics > 100 && users[i].points_mechanics < 1000) { cout << "\t|\n"; }
+				else if (users[i].points_mechanics == 1000) { cout << "\t|\n"; }
+
 			}
 			else {
 				cout << "\033[97m| " << i + 1; i - 1;
@@ -248,6 +249,8 @@ void stats::show_users_stats(const string& username)
 				if (users[i].points_mechanics < 10) { cout << "\t|\n"; }
 				else if (users[i].points_mechanics > 10 && users[i].points_mechanics < 100) { cout << "\t|\n"; }
 				else if (users[i].points_mechanics > 100 && users[i].points_mechanics < 1000) { cout << "\t|\n"; }
+				else if (users[i].points_mechanics == 1000) { cout << "\t|\n"; }
+
 			}
 		}
 
@@ -293,20 +296,32 @@ void stats::show_users_stats_adm()
 	{
 		choose = _getch();
 	} while (choose != '1' && choose != '2' && choose != '3' && choose != '\x1b');
-
+	
 	if (choose == '\x1b') // exit to ch. menu
 	{
 		return;
 	}
 
-	vector<Users_> tmp(1);
+	Users_ obj;
+	Users_::load_num_users(obj);
+
+	if (obj.num_users_ < 1)
+	{
+		system("cls");
+		cout << "\033[" << BrightYellow << "m\n\n  -----------------------";
+		cout << "\033[" << BrightYellow << "m\n  | \033[" << BrightRed << "mNo registered users \033[" << BrightYellow << "m|";
+		cout << "\033[" << BrightYellow << "m\n  -----------------------";
+		cout << "\033[" << BrightYellow << "m\n  | \033[" << BrightGreen << "mPress any button \033[" << BrightYellow << "m|";
+		cout << "\033[" << BrightYellow << "m\n  --------------------";
+		_getch();
+		return;
+	}
+
+	const int size_vec = obj.num_users_;
 
 	switch (choose)
 	{
 	case '1': {
-		Users_ obj;
-		Users_::load_num_users(obj);
-		const int size_vec = obj.num_users_;
 		vector<Users_> users(size_vec);
 		Users_::load_users(users);
 
@@ -316,9 +331,9 @@ void stats::show_users_stats_adm()
 			for (int j = 0; j < size(users) - i - 1; j++) {
 				if (users[j].points_math < users[j + 1].points_math) {
 					// меняем элементы местами
-					tmp[0] = users[j];
+					obj = users[j];
 					users[j] = users[j + 1];
-					users[j + 1] = tmp[0];
+					users[j + 1] = obj;
 				}
 			}
 		}
@@ -345,8 +360,13 @@ void stats::show_users_stats_adm()
 			if (users[i].points_math < 10) { cout << "\t|\n"; }
 			else if (users[i].points_math > 10 && users[i].points_math < 100) { cout << "\t|\n"; }
 			else if (users[i].points_math > 100 && users[i].points_math < 1000) { cout << "\t|\n"; }
+			else if (users[i].points_math == 1000) { cout << "\t|\n"; }
 		}
 
+
+
+
+			
 		cout << "\033[97m-----------------------------------------------------------------\n";
 		cout << "\033[97m| Press \033[91mesc\033[97m, to go to the admin menu |\n";
 		cout << "\033[97m--------------------------------------\n\033[0m";
@@ -363,9 +383,6 @@ void stats::show_users_stats_adm()
 	}break;
 	case '2':
 	{
-		Users_ obj;
-		Users_::load_num_users(obj);
-		const int size_vec = obj.num_users_;
 		vector<Users_> users(size_vec);
 		Users_::load_users(users);
 
@@ -375,9 +392,9 @@ void stats::show_users_stats_adm()
 			for (int j = 0; j < size(users) - i - 1; j++) {
 				if (users[j].physics_points < users[j + 1].physics_points) {
 					// меняем элементы местами
-					tmp[0] = users[j];
+					obj = users[j];
 					users[j] = users[j + 1];
-					users[j + 1] = tmp[0];
+					users[j + 1] = obj;
 				}
 			}
 		}
@@ -404,6 +421,7 @@ void stats::show_users_stats_adm()
 			if (users[i].physics_points < 10) { cout << "\t|\n"; }
 			else if (users[i].physics_points > 10 && users[i].physics_points < 100) { cout << "\t|\n"; }
 			else if (users[i].physics_points > 100 && users[i].physics_points < 1000) { cout << "\t|\n"; }
+			else if (users[i].physics_points == 1000) { cout << "\t|\n"; }
 		}
 
 		cout << "\033[97m-----------------------------------------------------------------\n";
@@ -422,9 +440,7 @@ void stats::show_users_stats_adm()
 	}break;
 	case '3':
 	{
-		Users_ obj;
-		Users_::load_num_users(obj);
-		const int size_vec = obj.num_users_;
+
 		vector<Users_> users(size_vec);
 		Users_::load_users(users);
 
@@ -434,9 +450,9 @@ void stats::show_users_stats_adm()
 			for (int j = 0; j < size(users) - i - 1; j++) {
 				if (users[j].points_mechanics < users[j + 1].points_mechanics) {
 					// меняем элементы местами
-					tmp[0] = users[j];
+					obj = users[j];
 					users[j] = users[j + 1];
-					users[j + 1] = tmp[0];
+					users[j + 1] = obj;
 				}
 			}
 		}
@@ -463,6 +479,8 @@ void stats::show_users_stats_adm()
 			if (users[i].points_mechanics < 10) { cout << "\t|\n"; }
 			else if (users[i].points_mechanics > 10 && users[i].points_mechanics < 100) { cout << "\t|\n"; }
 			else if (users[i].points_mechanics > 100 && users[i].points_mechanics < 1000) { cout << "\t|\n"; }
+			else if (users[i].points_mechanics == 1000) { cout << "\t|\n"; }
+
 		}
 
 		cout << "\033[97m-----------------------------------------------------------------\n";

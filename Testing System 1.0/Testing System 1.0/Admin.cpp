@@ -531,16 +531,17 @@ void admin::show_users()
 					if (users[i].points_math < 10) { cout << "\t\t  \x1B[92m|"; }
 					else if (users[i].points_math > 10 && users[i].points_math < 100) { cout << "\t\t  \x1B[92m|"; }
 					else if (users[i].points_math > 100 && users[i].points_math < 1000) { cout << "\t\t  \x1B[92m|"; }
-
+					else if (users[i].points_math == 1000) { cout << "\t  \x1B[92m|"; }
 					cout << "\n\x1B[92m| \x1B[94mPhysics points:   \x1B[97m" << users[i].physics_points;
 					if (users[i].physics_points < 10) { cout << "\t\t\x1B[92m  |"; }
 					else if (users[i].physics_points > 10 && users[i].physics_points < 100) { cout << "\t\t  \x1B[92m|"; }
 					else if (users[i].physics_points > 100 && users[i].physics_points < 1000) { cout << "\t\t  \x1B[92m|"; }
-
+					else if (users[i].physics_points == 1000) { cout << "\t  \x1B[92m|"; }
 					cout << "\n\x1B[92m| \x1B[94mMechanics points: \x1B[97m" << users[i].points_mechanics;
 					if (users[i].points_mechanics < 10) { cout << "\t\t  \x1B[92m|"; }
 					else if (users[i].points_mechanics > 10 && users[i].points_mechanics < 100) { cout << "\t\t  \x1B[92m|"; }
 					else if (users[i].points_mechanics > 100 && users[i].points_mechanics < 1000) { cout << "\t\t  \x1B[92m|"; }
+					else if (users[i].points_mechanics == 1000) { cout << "\t  \x1B[92m|"; }
 					cout << "\n\x1B[93m-----------------------------------";
 					//
 					cout << "\n\x1B[92m| \x1B[94mRegistration date:\033[97m " << users[i].day_reg << "." << users[i].month_reg << "." << users[i].year_reg << "\033[92m";
@@ -677,16 +678,17 @@ void admin::show_users()
 					if (users[i].points_math < 10) { cout << "\t\t  \x1B[92m|"; }
 					else if (users[i].points_math > 10 && users[i].points_math < 100) { cout << "\t\t  \x1B[92m|"; }
 					else if (users[i].points_math > 100 && users[i].points_math < 1000) { cout << "\t\t  \x1B[92m|"; }
-
+					else if (users[i].points_math == 1000) { cout << "\t  \x1B[92m|"; }
 					cout << "\n\x1B[92m| \x1B[94mPhysics points:   \x1B[97m" << users[i].physics_points;
 					if (users[i].physics_points < 10) { cout << "\t\t\x1B[92m  |"; }
 					else if (users[i].physics_points > 10 && users[i].physics_points < 100) { cout << "\t\t  \x1B[92m|"; }
 					else if (users[i].physics_points > 100 && users[i].physics_points < 1000) { cout << "\t\t  \x1B[92m|"; }
-
+					else if (users[i].physics_points == 1000) { cout << "\t  \x1B[92m|"; }
 					cout << "\n\x1B[92m| \x1B[94mMechanics points: \x1B[97m" << users[i].points_mechanics;
 					if (users[i].points_mechanics < 10) { cout << "\t\t  \x1B[92m|"; }
 					else if (users[i].points_mechanics > 10 && users[i].points_mechanics < 100) { cout << "\t\t  \x1B[92m|"; }
 					else if (users[i].points_mechanics > 100 && users[i].points_mechanics < 1000) { cout << "\t\t  \x1B[92m|"; }
+					else if (users[i].points_mechanics == 1000) { cout << "\t  \x1B[92m|"; }
 					cout << "\n\x1B[93m-----------------------------------";
 					cout << "\n\x1B[92m| \x1B[94mRegistration date:\033[97m " << users[i].day_reg << "." << users[i].month_reg << "." << users[i].year_reg << "\033[92m";
 					if (users[i].day_reg < 10 && users[i].month_reg < 10) { cout << setw(11) << "\033[92m|"; }

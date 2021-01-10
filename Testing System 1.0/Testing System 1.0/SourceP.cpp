@@ -4,6 +4,9 @@
 
 int main()
 {
+	try
+	{
+		
 #pragma region Setting program
 	setlocale(LC_ALL, "RUS"); // Setting the program language
 
@@ -59,4 +62,10 @@ int main()
 #pragma endregion
 	char choose = ' '; // for choose in program menu
 	display::main_menu(choose);
+	}
+	catch (...)
+	{
+		return 0;
+	}
+	return 0;
 }

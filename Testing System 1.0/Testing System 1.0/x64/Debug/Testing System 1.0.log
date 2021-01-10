@@ -1,10 +1,44 @@
 ﻿cl : командная строка warning D9002: пропуск неизвестного параметра "/utf-16"
+  Admin.cpp
+  The contents of <filesystem> are available only with C++17 or later.
+C:\Users\danko\source\repos\Renzo-Dev\Testing-System-1.0\Testing System 1.0\Testing System 1.0\Admin.cpp(59,12): warning C4102: EnterLogin: неиспользованная метка
+C:\Users\danko\source\repos\Renzo-Dev\Testing-System-1.0\Testing System 1.0\Testing System 1.0\Admin.cpp(96,15): warning C4102: EnterPassword: неиспользованная метка
+C:\Users\danko\source\repos\Renzo-Dev\Testing-System-1.0\Testing System 1.0\Testing System 1.0\Admin.cpp(268,7): warning C4101: tm: неиспользованная локальная переменная
+C:\Users\danko\source\repos\Renzo-Dev\Testing-System-1.0\Testing System 1.0\Testing System 1.0\Admin.cpp(478,8): warning C4552: "-": результат выражения не используется
+C:\Users\danko\source\repos\Renzo-Dev\Testing-System-1.0\Testing System 1.0\Testing System 1.0\Admin.cpp(558,8): warning C4552: "-": результат выражения не используется
+C:\Users\danko\source\repos\Renzo-Dev\Testing-System-1.0\Testing System 1.0\Testing System 1.0\Admin.cpp(600,8): warning C4552: "-": результат выражения не используется
+C:\Users\danko\source\repos\Renzo-Dev\Testing-System-1.0\Testing System 1.0\Testing System 1.0\Admin.cpp(704,8): warning C4552: "-": результат выражения не используется
+  Display.cpp
+C:\Users\danko\source\repos\Renzo-Dev\Testing-System-1.0\Testing System 1.0\Testing System 1.0\Display.cpp(323,12): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  SourceP.cpp
+  Stats.cpp
+C:\Users\danko\source\repos\Renzo-Dev\Testing-System-1.0\Testing System 1.0\Testing System 1.0\Stats.cpp(72,38): warning C4552: "-": результат выражения не используется
+C:\Users\danko\source\repos\Renzo-Dev\Testing-System-1.0\Testing System 1.0\Testing System 1.0\Stats.cpp(75,114): warning C4267: =: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\danko\source\repos\Renzo-Dev\Testing-System-1.0\Testing System 1.0\Testing System 1.0\Stats.cpp(87,38): warning C4552: "-": результат выражения не используется
+C:\Users\danko\source\repos\Renzo-Dev\Testing-System-1.0\Testing System 1.0\Testing System 1.0\Stats.cpp(90,114): warning C4267: =: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\danko\source\repos\Renzo-Dev\Testing-System-1.0\Testing System 1.0\Testing System 1.0\Stats.cpp(147,38): warning C4552: "-": результат выражения не используется
+C:\Users\danko\source\repos\Renzo-Dev\Testing-System-1.0\Testing System 1.0\Testing System 1.0\Stats.cpp(150,114): warning C4267: =: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\danko\source\repos\Renzo-Dev\Testing-System-1.0\Testing System 1.0\Testing System 1.0\Stats.cpp(163,38): warning C4552: "-": результат выражения не используется
+C:\Users\danko\source\repos\Renzo-Dev\Testing-System-1.0\Testing System 1.0\Testing System 1.0\Stats.cpp(166,114): warning C4267: =: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\danko\source\repos\Renzo-Dev\Testing-System-1.0\Testing System 1.0\Testing System 1.0\Stats.cpp(224,38): warning C4552: "-": результат выражения не используется
+C:\Users\danko\source\repos\Renzo-Dev\Testing-System-1.0\Testing System 1.0\Testing System 1.0\Stats.cpp(227,114): warning C4267: =: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\danko\source\repos\Renzo-Dev\Testing-System-1.0\Testing System 1.0\Testing System 1.0\Stats.cpp(240,38): warning C4552: "-": результат выражения не используется
+C:\Users\danko\source\repos\Renzo-Dev\Testing-System-1.0\Testing System 1.0\Testing System 1.0\Stats.cpp(243,114): warning C4267: =: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\danko\source\repos\Renzo-Dev\Testing-System-1.0\Testing System 1.0\Testing System 1.0\Stats.cpp(351,37): warning C4552: "-": результат выражения не используется
+C:\Users\danko\source\repos\Renzo-Dev\Testing-System-1.0\Testing System 1.0\Testing System 1.0\Stats.cpp(354,113): warning C4267: =: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\danko\source\repos\Renzo-Dev\Testing-System-1.0\Testing System 1.0\Testing System 1.0\Stats.cpp(412,37): warning C4552: "-": результат выражения не используется
+C:\Users\danko\source\repos\Renzo-Dev\Testing-System-1.0\Testing System 1.0\Testing System 1.0\Stats.cpp(415,113): warning C4267: =: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\danko\source\repos\Renzo-Dev\Testing-System-1.0\Testing System 1.0\Testing System 1.0\Stats.cpp(470,37): warning C4552: "-": результат выражения не используется
+C:\Users\danko\source\repos\Renzo-Dev\Testing-System-1.0\Testing System 1.0\Testing System 1.0\Stats.cpp(473,113): warning C4267: =: преобразование из "size_t" в "int"; возможна потеря данных
+  Test.cpp
+C:\Users\danko\source\repos\Renzo-Dev\Testing-System-1.0\Testing System 1.0\Testing System 1.0\Test.cpp(273,35): warning C4267: =: преобразование из "size_t" в "int"; возможна потеря данных
   Users_.cpp
-C:\Users\danko\source\repos\Testing System Alpha 1.0\Testing System 1.0\Testing System 1.0\Users_.cpp(650,20): warning C4018: <: несоответствие типов со знаком и без знака
-C:\Users\danko\source\repos\Testing System Alpha 1.0\Testing System 1.0\Testing System 1.0\Users_.cpp(274,10): warning C4102: EnterName: неиспользованная метка
-C:\Users\danko\source\repos\Testing System Alpha 1.0\Testing System 1.0\Testing System 1.0\Users_.cpp(311,13): warning C4102: EnterSurname: неиспользованная метка
-C:\Users\danko\source\repos\Testing System Alpha 1.0\Testing System 1.0\Testing System 1.0\Users_.cpp(342,16): warning C4102: EnterMiddlename: неиспользованная метка
-C:\Users\danko\source\repos\Testing System Alpha 1.0\Testing System 1.0\Testing System 1.0\Users_.cpp(519,13): warning C4102: EnterCountry: неиспользованная метка
-C:\Users\danko\source\repos\Testing System Alpha 1.0\Testing System 1.0\Testing System 1.0\Users_.cpp(550,10): warning C4102: Entercity: неиспользованная метка
-C:\Users\danko\source\repos\Testing System Alpha 1.0\Testing System 1.0\Testing System 1.0\Users_.cpp(619,12): warning C4102: EnterGender: неиспользованная метка
-  Testing System 1.0.vcxproj -> C:\Users\danko\source\repos\Testing System Alpha 1.0\Testing System 1.0\x64\Debug\Testing System 1.0.exe
+C:\Users\danko\source\repos\Renzo-Dev\Testing-System-1.0\Testing System 1.0\Testing System 1.0\Users_.cpp(650,20): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\danko\source\repos\Renzo-Dev\Testing-System-1.0\Testing System 1.0\Testing System 1.0\Users_.cpp(274,10): warning C4102: EnterName: неиспользованная метка
+C:\Users\danko\source\repos\Renzo-Dev\Testing-System-1.0\Testing System 1.0\Testing System 1.0\Users_.cpp(311,13): warning C4102: EnterSurname: неиспользованная метка
+C:\Users\danko\source\repos\Renzo-Dev\Testing-System-1.0\Testing System 1.0\Testing System 1.0\Users_.cpp(342,16): warning C4102: EnterMiddlename: неиспользованная метка
+C:\Users\danko\source\repos\Renzo-Dev\Testing-System-1.0\Testing System 1.0\Testing System 1.0\Users_.cpp(519,13): warning C4102: EnterCountry: неиспользованная метка
+C:\Users\danko\source\repos\Renzo-Dev\Testing-System-1.0\Testing System 1.0\Testing System 1.0\Users_.cpp(550,10): warning C4102: Entercity: неиспользованная метка
+C:\Users\danko\source\repos\Renzo-Dev\Testing-System-1.0\Testing System 1.0\Testing System 1.0\Users_.cpp(619,12): warning C4102: EnterGender: неиспользованная метка
+  Создание кода...
+  Testing System 1.0.vcxproj -> C:\Users\danko\source\repos\Renzo-Dev\Testing-System-1.0\Testing System 1.0\x64\Debug\Testing System 1.0.exe
