@@ -1,3 +1,4 @@
 ﻿cl : командная строка warning D9002: пропуск неизвестного параметра "/utf-16"
-  SourceP.cpp
+  Display.cpp
+C:\Users\danko\source\repos\Renzo-Dev\Testing-System-1.0\Testing System 1.0\Testing System 1.0\Display.cpp(322,12): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
   Testing System 1.0.vcxproj -> C:\Users\danko\source\repos\Renzo-Dev\Testing-System-1.0\Testing System 1.0\x64\Debug\Testing System 1.0.exe

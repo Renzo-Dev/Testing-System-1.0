@@ -9,7 +9,7 @@ display::display()
 
 void display::main_menu(char choose_)
 {
-	//welcome();
+	welcome();
 StartProgram:
 	do {
 		choose_ = ' ';
