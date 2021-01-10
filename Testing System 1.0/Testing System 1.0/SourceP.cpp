@@ -62,10 +62,13 @@ int main()
 #pragma endregion
 	char choose = ' '; // for choose in program menu
 	display::main_menu(choose);
+
+	return 0;
 	}
 	catch (...)
 	{
-		return 0;
+		system("cls");
+		cout << "Fatal Error!";
+		return ERROR;
 	}
-	return 0;
 }

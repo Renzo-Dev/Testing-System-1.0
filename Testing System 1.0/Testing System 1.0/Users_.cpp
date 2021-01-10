@@ -94,26 +94,56 @@ void Users_::save_users(vector<Users_>& obj)
 void Users_::load_users(vector<Users_>& obj)
 {
 	ifstream file;
-	file.open(save_password_path());
-	if (file.is_open())
-	{
-		for (int i = 0; i < size(obj); i++)
+	file.exceptions(ifstream::badbit | ifstream::failbit);
+	try {
+
+		file.open(save_password_path());
+		if (file.is_open())
 		{
-			file >> obj[i].password_ >> obj[i].key;
+			for (int i = 0; i < size(obj); i++)
+			{
+				file >> obj[i].password_ >> obj[i].key;
+			}
 		}
+		file.close();
 	}
-	file.close();
-
-	file.open(user_date(), std::ios::binary);
-	if (file.is_open())
+	catch (...)
 	{
-		for (int i = 0; i < size(obj); i++) {
-			file >> obj[i].r_user_ >> obj[i].login_ >> obj[i].user_name_ >> obj[i].user_family_name_ >> obj[i].user_patronymic_ >> obj[i].mail_ >> obj[i].phone_number_ >> obj[i].country >> obj[i].city >> obj[i].day >> obj[i].month >> obj[i].year >> obj[i].gender >> obj[i].points_math >> obj[i].physics_points >> obj[i].points_mechanics >> obj[i].day_reg >> obj[i].month_reg >> obj[i].year_reg;
-		}
+		system("cls");
+		cout << "\n-------------------";
+		cout << "\n| \033["<< BrightRed << "mfile open error \033[" << BrightYellow << "m|";
+		cout << "\n-------------------";
+		cout << "\n| PATH: \033[" << BrightWhite << "m" << save_password_path().c_str() << "\n";
+		cout << "\033[" << BrightYellow << "m--------------------\n";
+		cout << "\033[" << BrightYellow << "m| \033[" << BrightGreen << "mPress Any button \033[" << BrightYellow << "m|";
+		cout << "\n\033[" << BrightYellow << "m--------------------\n";
+		_getch();
 	}
-	file.close();
 
-	decryption(obj);
+	try {
+		file.open(user_date(), std::ios::binary);
+		if (file.is_open())
+		{
+			for (int i = 0; i < size(obj); i++) {
+				file >> obj[i].r_user_ >> obj[i].login_ >> obj[i].user_name_ >> obj[i].user_family_name_ >> obj[i].user_patronymic_ >> obj[i].mail_ >> obj[i].phone_number_ >> obj[i].country >> obj[i].city >> obj[i].day >> obj[i].month >> obj[i].year >> obj[i].gender >> obj[i].points_math >> obj[i].physics_points >> obj[i].points_mechanics >> obj[i].day_reg >> obj[i].month_reg >> obj[i].year_reg;
+			}
+		}
+		file.close();
+
+		decryption(obj);
+	}
+	catch (...)
+	{
+		system("cls");
+		cout << "\n-------------------";
+		cout << "\n| \033[" << BrightRed << "mfile open error \033[" << BrightYellow << "m|";
+		cout << "\n-------------------";
+		cout << "\n| PATH: \033[" << BrightWhite << "m" << user_date().c_str() << "\n";
+		cout << "\033[" << BrightYellow << "m--------------------\n";
+		cout << "\033[" << BrightYellow << "m| \033[" << BrightGreen << "mPress Any button \033[" << BrightYellow << "m|";
+		cout << "\n\033[" << BrightYellow << "m--------------------\n";
+		_getch();
+	}
 }
 
 void Users_::save_num_users(Users_& obj)
@@ -706,11 +736,12 @@ void Users_::sign_in()
 	load_num_users(obj);
 	const int size_vec = obj.num_users_;
 	vector<Users_> users(size_vec);
-	if (size_vec >= 1) {
+	if (size_vec >= 1)
+	{
 		load_users(users);
 	}
 	auto login_found = 0; // login is in the database ( логин есть в базе )
-	string username = "";
+	string username = " ";
 
 	int i = 0;
 	char choose;

@@ -9,7 +9,6 @@ display::display()
 
 void display::main_menu(char choose_)
 {
-	stats::show_users_stats_adm();
 	//welcome();
 StartProgram:
 	do {
@@ -355,9 +354,9 @@ void display::print_date()
 
 	if (gt.wDay <= 10 && gt.wMonth <= 10)
 	{
-		cout << "\t\t\t\t  \033[97m--------------\033[93mDATE\033[97m--------------\n";
+		cout << "\t\t\t\t  \033[97m--------------\033[93mDATE\033[97m---------------\n";
 		cout << "\t\t\t\t  \033[97m|\x1B[92m  Day: \033[97m" << gt.wDay << "\x1B[92m Month: \033[97m" << gt.wMonth << "\x1B[92m Year: \033[97m" << gt.wYear << "\033[97m  |";
-		cout << "\n\t\t\t\t  \033[97m--------------------------------";
+		cout << "\n\t\t\t\t  \033[97m---------------------------------";
 	}
 	else if (gt.wDay >= 10 && gt.wMonth >= 10)
 	{
